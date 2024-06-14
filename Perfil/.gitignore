@@ -303,3 +303,4 @@ TSWLatexianTemp*
 build/
 resources/
 assets/
+node_modules/
