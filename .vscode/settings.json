@@ -203,5 +203,6 @@
         }
     ],
     "latex-workshop.latex.autoClean.run": "onBuilt",
-    "editor.fontFamily": "'agave NF', 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace"
+    "editor.fontFamily": "'agave NF', 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace",
+    "editor.wordWrap": "wordWrapColumn"
 }
