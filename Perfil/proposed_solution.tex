@@ -1,1 +1,45 @@
 \section{Descripción de la Solución Propuesta}
+Dada la problemática expuesta en la sección \ref{problem_statement}, en la que se
+describe de manera breve el enfoque que se le piensa brindar, en esta sección se
+trata de describir la primera aproximación a su solución de forma detallada.
+
+Sin duda, la realización de una herramienta de software libre reutilizable para la
+implementación de trámites y su correspondiente seguimiento a nivel de backend tiene
+muchas ventajas, pero su realización no es del todo trivial y demanda que se
+conceptualice en un modelo medianamente robusto, con metodologías claras y descripciones
+escuetas.
+
+Cuando uno piensa en trámites, usualmente piensa en burocracia, en largas filas,
+una obligación muchas veces irrenunciable y una lista interminable de pasos a
+seguir. Según la Real Academia de la Lengua Española, se define como "Cada uno de
+los pasos y diligencias que hay que recorrer en un asunto hasta su conclusión"
+\parencite{asaleDiccionarioLenguaEspanola}.
+
+Si bien las definiciones de trámite son escasas y algunas pueden tratar su semántica
+desde una perspectiva más funcional, es indudable que un trámite es un
+procedimiento que consta de uno o más pasos a seguir. De este modo, se puede
+vislumbrar una manera casi obvia de modelarlo usando conceptos de teoría
+computacional, de matemáticas discretas o circuitos secuenciales. Esto es, usando
+máquinas de estado finitas.
+
+Este enfoque no es precisamente nuevo y ya se puede ver en una aproximación al modelado
+en software de distintos trámites de la división de gestiones, admisiones y
+registros de la UMSA, donde se emplearon máquinas de Turing que a efectos prácticos
+se aproximan más a máquinas de estado finitas \parencite{nachoSISTEMACONTROLTRAMITES2007}.
+
+Desde luego, las máquinas de estados finitas parecen ser una manera sencilla de modelar
+los procesos de trámite a nivel de software, principalmente por su paralelismo
+con los pasos y sus respectivas transiciones, asemejándose a un procedimiento administrativo,
+como se puede evidenciar en la definición matemática de este autómata:
+
+\begin{definition}[Máquina de Estados Finita]
+	Una máquina de estados es un conjunto de 5 elementos $M=(S,I,O,v,w)$, donde
+	$S$ representa a la colección de estados de $M$; $I$ representa al alfabeto de
+	entradas para M; O es el alfabeto de salidas de M; $v:SxI->S$ es la función del
+	siguiente estado; y $w:SxI->O$ es la función de salida \parencite{grimaldiDiscreteCombinatorialMathematics1998}.
+\end{definition}
+
+Este paralelismo es más notorio en un diagrama de estados como el que se muestra
+en la figura \ref{}, donde a cada estado se le puso un nombre cercano a la
+naturaleza de los procedimientos administrativos de forma adrede para hacer más
+obvia la relación.
