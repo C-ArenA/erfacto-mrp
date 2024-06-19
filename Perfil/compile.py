@@ -1,4 +1,14 @@
 import subprocess
+import os
+
+def is_valid(filename):
+  """
+  Verifica que el proceso se esté corriendo de forma válida, dentro
+  del directorio esperado y con un archivo existente
+  """
+  if not os.path.isfile(filename):
+    raise Exception("No hay un archivo main.tex en esta carpeta")
+
 
 def compile_latex(filename):
   """
@@ -7,6 +17,9 @@ def compile_latex(filename):
   Args:
     filename: The name of the LaTeX file (including .tex extension).
   """
+  is_valid(filename)
+  # Formatea código
+  subprocess.run(["npm", "run", "prettier"])
   # Compile with pdflatex
   subprocess.run(["pdflatex", filename])
   print("1:pdflatex")
