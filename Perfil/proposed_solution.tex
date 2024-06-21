@@ -12,8 +12,8 @@ claras y descripciones escuetas.
 Cuando uno piensa en trámites, usualmente piensa en burocracia, en largas filas,
 una obligación muchas veces irrenunciable y una lista interminable de pasos a
 seguir. Según la Real Academia de la Lengua Española, se define como \say{Cada
-uno de los pasos y diligencias que hay que recorrer en un asunto hasta su
-conclusión} \parencite{asaleDiccionarioLenguaEspanola}.
+	uno de los pasos y diligencias que hay que recorrer en un asunto hasta su
+	conclusión} \parencite{asaleDiccionarioLenguaEspanola}.
 
 Si bien las definiciones de trámite son escasas y algunas pueden tratar su
 semántica desde una perspectiva más funcional, es indudable que un trámite es un
@@ -33,7 +33,7 @@ efectos prácticos se aproximan más a máquinas de estado finitas
 	\centering
 	\includegraphics[width=0.7\textwidth]{assets/carreraparalelanacho}
 	\caption{Diagrama de una máquina de Turing para carreras paralelas
-	desarrollada en \cite{nachoSISTEMACONTROLTRAMITES2007}}
+		desarrollada en \cite{nachoSISTEMACONTROLTRAMITES2007}}
 	\label{fig:nachocarreraparalela}
 \end{figure}
 
@@ -53,7 +53,7 @@ matemática de este autómata:
 
 Este paralelismo es más notorio en un diagrama de estados como el que se muestra
 en la figura \ref{fig:states}, donde tenemos los estados de $S = (s_{0}, s_{1},
-s_{2}, s_{3}, s_{4}, s_{5}, s_{error})$ y algunas transiciones entre los mismos,
+	s_{2}, s_{3}, s_{4}, s_{5}, s_{error})$ y algunas transiciones entre los mismos,
 cada una con sus correspondientes entradas ($\iota_{mn}$) y salidas ($o_{mn}$).
 Las transiciones restantes se omiten porque apuntan a un mismo estado de error
 del trámite ($s_{error}$).
@@ -86,24 +86,24 @@ inicialmente serían:
 
 \begin{itemize}
 	\item Descripción detallada de los estados, compuesta mínimamente por un
-		nombre único, una descripción, el sujeto cuya perspectiva se usa para la
-		descripción y su visibilidad.
+	      nombre único, una descripción, el sujeto cuya perspectiva se usa para la
+	      descripción y su visibilidad.
 
 	\item Preferencia del autómata de Moore sobre el autómata de Mealy. Los
-		autómatas de Mealy son una simplificación en número de estados a partir
-		de los autómatas de Moore, con estados que en las aplicaciones
-		originales del concepto podían ser considerados innecesarios
-		\parencite{mealyMethodSynthesizingSequential1955}.  Si bien en muchas
-		aplicaciones es lo deseado, en temas de auditoría se prefiere tener la
-		mayor cantidad de información relevante, por lo que sin restringir el
-		uso de máquinas de Mealy, se priorizará el uso de máquinas de Moore.
+	      autómatas de Mealy son una simplificación en número de estados a partir
+	      de los autómatas de Moore, con estados que en las aplicaciones
+	      originales del concepto podían ser considerados innecesarios
+	      \parencite{mealyMethodSynthesizingSequential1955}.  Si bien en muchas
+	      aplicaciones es lo deseado, en temas de auditoría se prefiere tener la
+	      mayor cantidad de información relevante, por lo que sin restringir el
+	      uso de máquinas de Mealy, se priorizará el uso de máquinas de Moore.
 
 	\item Respecto al anterior punto, incluso si el usuario usa Mealy en lugar
-		de Moore, se recomienda la definición de tantos estados como sean
-		posibles.
-	
-	% TODO: Aquí irían las definiciones de inputs, outputs, etc como lo tengo
-	% descrito en el Obsidian
+	      de Moore, se recomienda la definición de tantos estados como sean
+	      posibles.
+
+	      % TODO: Aquí irían las definiciones de inputs, outputs, etc como lo tengo
+	      % descrito en el Obsidian
 \end{itemize}
 
 Como parte de la solución propuesta, se debe entender que los lineamientos
@@ -152,7 +152,7 @@ herramientas que ayuden al proceso de trámites, como por ejemplo:
 	\item Generación de códigos de trámite.
 
 	\item Generación de códigos de verificación de correos (Que si bien hay
-		alternativas para lo mismo, se facilitará el uso desde el paquete).
+	      alternativas para lo mismo, se facilitará el uso desde el paquete).
 
 	\item Funcionalidad de notificaciones.
 
@@ -165,7 +165,7 @@ herramientas que ayuden al proceso de trámites, como por ejemplo:
 	\item Niveles de visibilidad de trámites para seguimiento.
 
 	\item Mecanismos para dificultar el entorpecimiento de un trámite y
-		facilitar la identificación de responsables.
+	      facilitar la identificación de responsables.
 
 	\item Interfaz sencilla para cambio de estados de una máquina (trámite).
 \end{itemize}
@@ -179,18 +179,18 @@ con 4 libertades esenciales \cite{QueEsSoftware}:
 
 \begin{itemize}
 	\item La libertad de ejecutar el programa como se desee, con cualquier
-		propósito (libertad 0).
-	
+	      propósito (libertad 0).
+
 	\item La libertad de estudiar cómo funciona el programa, y cambiarlo para
-		que haga lo que se desee (libertad 1). El acceso al código fuente es una
-		condición necesaria para ello.
-	
+	      que haga lo que se desee (libertad 1). El acceso al código fuente es una
+	      condición necesaria para ello.
+
 	\item La libertad de redistribuir copias para ayudar a otros (libertad 2).
-	
+
 	\item La libertad de distribuir copias de sus versiones modificadas a
-		terceros (libertad 3). Esto le permite ofrecer a toda la comunidad la
-		oportunidad de beneficiarse de las modificaciones. El acceso al código
-		fuente es una condición necesaria para ello.
+	      terceros (libertad 3). Esto le permite ofrecer a toda la comunidad la
+	      oportunidad de beneficiarse de las modificaciones. El acceso al código
+	      fuente es una condición necesaria para ello.
 \end{itemize}
 
 Esto debe ser claramente definido en un documento de licencia de Software que se
