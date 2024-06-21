@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-06-18T18:50:58.655Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.3 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="iTmSRyYqMHV1BzMz4XJA" version="24.5.3" type="device">
+<mxfile host="Electron" modified="2024-06-21T00:39:05.949Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.3 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="WtUybON60622CQHJsDDI" version="24.5.3" type="device">
   <diagram name="Page-1" id="6kFIX5o8c1vGUrvYZGmL">
-    <mxGraphModel dx="511" dy="408" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="1" shadow="1">
+    <mxGraphModel dx="727" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="1" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -93,6 +93,60 @@
         </mxCell>
         <mxCell id="cz6YA0elysQhP-N-1jxG-20" value="Start" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
           <mxGeometry x="20" y="370" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-21" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;Comunicación" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFFF33;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;strokeColor=none;fontColor=#FC00A8;gradientColor=none;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="350" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-23" value="&amp;nbsp; &amp;nbsp; Planeación" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#3399FF;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;strokeColor=none;fontColor=#FFFF00;gradientColor=none;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="350" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-24" value="&amp;nbsp; &amp;nbsp;Modelado" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#9933FF;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;strokeColor=none;fontColor=#99FFFF;gradientColor=none;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="350" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-25" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;Construcción" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#00FF00;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;strokeColor=none;fontColor=#9933FF;gradientColor=none;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="350" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-26" value="&amp;nbsp; &amp;nbsp;&lt;font color=&quot;#22ff00&quot;&gt;Despliegue&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FF33FF;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;strokeColor=none;fontColor=#9933FF;gradientColor=none;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="350" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-28" value="&amp;nbsp; &amp;nbsp; Specification" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#3399FF;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;strokeColor=none;fontColor=#FFFF00;gradientColor=none;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="470" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-29" value="&amp;nbsp; &amp;nbsp; Development" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#9933FF;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;strokeColor=none;fontColor=#99FFFF;gradientColor=none;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="470" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-30" value="&amp;nbsp; &amp;nbsp;Validation" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#00FF00;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;strokeColor=none;fontColor=#9933FF;gradientColor=none;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="470" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-31" value="&amp;nbsp; &amp;nbsp;&lt;font color=&quot;#22ff00&quot;&gt;Evolution&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FF33FF;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;strokeColor=none;fontColor=#9933FF;gradientColor=none;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="470" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-32" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;Comunicación" style="html=1;outlineConnect=0;whiteSpace=wrap;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="580" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-33" value="&amp;nbsp; &amp;nbsp; Planeación" style="html=1;outlineConnect=0;whiteSpace=wrap;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="580" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-34" value="&amp;nbsp; &amp;nbsp;Modelado" style="html=1;outlineConnect=0;whiteSpace=wrap;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="580" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-35" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;Construcción" style="html=1;outlineConnect=0;whiteSpace=wrap;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="580" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-36" value="&amp;nbsp; &amp;nbsp;&lt;font&gt;Despliegue&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="580" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-37" value="&amp;nbsp; &amp;nbsp; Specification" style="html=1;outlineConnect=0;whiteSpace=wrap;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="700" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-38" value="&amp;nbsp; &amp;nbsp; Development" style="html=1;outlineConnect=0;whiteSpace=wrap;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="700" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-39" value="&amp;nbsp; &amp;nbsp;Validation" style="html=1;outlineConnect=0;whiteSpace=wrap;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="700" width="125" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cz6YA0elysQhP-N-1jxG-40" value="&amp;nbsp; &amp;nbsp;&lt;font&gt;Evolution&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;shape=mxgraph.archimate3.valueStream;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="700" width="125" height="62.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
