@@ -303,3 +303,5 @@ TSWLatexianTemp*
 build/
 resources/
 node_modules/
+.DS_Store
+*.drawio.dtmp
