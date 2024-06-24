@@ -1,6 +1,12 @@
 {
     "latex-workshop.latex.recipes": [
         {
+            "name": "1pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
             "name": "pdflatex -> biber -> pdflatex * 2",
             "tools": [
                 "pdflatex",
