@@ -1,23 +1,123 @@
 \section{Antecedentes}
 
-Para entender las intenciones de la presente propuesta, es menester considerar lo que significan y representan los trámites, el gobierno electrónico y el desarrollo de software libre reutilizable. De esta manera entenderemos mejor la problemática y la solución planteada.
+\begin{tcolorbox}[breakable]
+    
+    Los antecedentes tienen que dar el origen que nos lleva a considerar el Problema
+    que pretende ser resuelto por este proyecto. Introduce al mismo de forma
+    algo más detallada que la introducción.
+    Describe el escenario sobre el cual se desarrollará y mencionará qué se intentó para solucionarlo.
+    
+    Aquí puedo usar referencias al gobierno electrónico y las determinaciones
+    del estado boliviano y de otras instituciones que suportean la idea de este
+    proyecto.
 
-\subsection{El trámite}
+    \begin{enumerate}
+        \item Los trámites son importantes para el funcionamiento del estado
+        \item Los gobiernos buscan digitalizarse
+        \item Los gobiernos e instituciones prefieren software libre
+        \item En Bolivia se hizo reglamentos
+        \item Se adjudican obras para desarrollar software
+        \item Se hizo el sistema SIAI con módulos de trámites
+        \item Se hacen muchos desarrollos desde cero
+        \item Existen librerías interesant
+        \item Existe funcionalidad común 
+        \item La reutilización de software es ventajosa
+    \end{enumerate}
+    
+\end{tcolorbox}
 
-Poco se ha escrito estrictamente sobre los trámites a nivel académico. Sin embargo, por conocimiento popular casi todos sabemos lo que son. Sabemos también lo estrechamente relacionados que están con el gobierno, la burocracia y el manejo de documentos.
+Durante el desarrollo del sistema SIAI (Sistema de Información Ambiental
+Industrial) del \say{Ministerio de Desarrollo Productivo y Economía Plural} por parte
+de la empresa \say{2IES}, se pudo identificar ciertas funcionalidades comunes a muchos
+sistemas de software gubernamentales, las cuales tienen que ver con los trámites, un proceso común en la administración pública de los gobiernos.
 
-La palabra trámite viene del latín \say{\textit{trames}}, \say{\textit{tramitis}}, que para los romanos significaba \say{senda}, \say{camino}, de donde se derivó el sentido actual de \say{vía legal o procedimiento que debe seguir una gestión}. En inglés no existe una palabra que tenga la traducción exacta de trámite, pero se usan distintas palabras como 
-\say{\textit{Procedure}}, \say{\textit{Transaction}} o \say{\textit{Paperwork}}. También en español se puede referir al mismo como \say{Procedimiento administrativo}. En todas estas definiciones se tienen como común denominador: Proceso, Camino, Papeleo.
+\subsection{El estado y el gobierno}
 
-Los estados requieren de su población cumplir con una serie de obligaciones, las cuales dieron paso al surgimiento de diversas instituciones a las que acudimos a efecto de realizar trámites
+Si bien los temas filosóficos, históricos o políticos parecen carecer de
+importancia en la presente propuesta, es importante entender el origen de la
+problemática señalada más adelante desde la misma concepción del gobierno y del
+estado, pues esto encaminará a entender su evolución, la cual eventualmente
+origina la cuestión que se trata en este documento.
 
-Al respecto, de acuerdo a una definición del Gobierno de México en uno de sus portales web se entiende como trámite a:
+El estado tiene muchas definiciones desde distintos puntos de vista, como el
+economicista de Marx o el histórico de Weber, quien denota cómo el estado es una
+evolución que consta de 3 etapas. La primera de presión sobre la gente y las
+siguientes como una suerte de sumisión mutuamente acordada por la población.
+
+Sin embargo, para lo que nos atañe, el estado es un fenómeno político que supuso
+la separación o la salida de lo político del terreno social y \textbf{la
+conversión del individuo en un ciudadano}, cuya relación de pertenencia
+fundamental será con el estado al margen de cualquier característica particular
+\cite{gordilloperezestadosurge}. Esto implica que el ciudadano tiene en adelante
+una serie de obligaciones para con el estado al cual pertenece.
+
+% κυβερνέιν
+
+Por su lado, uno de los pilares del estado (Además del territorio, la población, la soberanía y el derecho), el gobierno (del griego
+$\kappa \upsilon \beta \varepsilon \rho \nu \acute{\epsilon} \iota \nu$
+kybernéin \textquote{pilotar un barco} o \textquote{capitán de un barco}), es un
+sistema orgánico de autoridades a través del cual se expresa el poder del
+Estado, creando, afirmando y desenvolviendo el orden jurídico
+\cite{jorgefernandezruizdederecho}. Es decir, es un actor que
+funciona como cara del estado hacia la ciudadanía.
+
+De esta manera, el gobierno es la entidad a la cual la ciudadanía se aproxima como figura de autoridad. Es el que administra mediante sus distintos brazos de acción.
+
+\subsection{La Administración Pública}
+
+La concepción de administración pública se remonta a muchos años atrás. Por
+ejemplo, en el año 302 D.C. Claudio Mamertino ya hablaba del término
+\say{administración de la cosa pública} (\textit{administratione res publicae})
+\cite{nixonsaylorinpraiseroman}. Y es que esta estrechamente relacionada con el
+ejercicio del gobierno. Sin embargo, la aplicación y definición de la misma no
+estaría clara hasta la llegada de Bonnin, el padre de la ciencia de la
+administración pública.
+
+Bonnin, en 1808, daba una definición primigenia sobre la administración pública:
+\textquote{La que tiene la gestión de los asuntos comunes respecto al ciudadano
+como miembro del estado} \cite{omarguerrerobonninsigloxxi}.
+
+De este modo, la administración pública conecta al gobierno con la ciudadanía en
+busca de beneficiar a esta última y conectarla con el estado de forma inmediata.
+Esta conexión se suele materializar en un procedimiento común, que es el
+trámite.
+
+\subsection{El trámite y la burocracia}
+
+Poco se ha escrito estrictamente sobre los trámites a nivel académico. Sin
+embargo, por conocimiento popular casi toda la sociedad sabe lo que son. Se sabe
+también lo estrechamente relacionados que están con el gobierno, la burocracia y
+el manejo de documentos.
+
+La palabra trámite viene del latín \say{\textit{trames}},
+\say{\textit{tramitis}}, que para los romanos significaba \say{senda},
+\say{camino}, de donde se derivó el sentido actual de \say{vía legal o
+procedimiento que debe seguir una gestión}. En inglés no existe una palabra que
+tenga la traducción exacta de trámite, pero se usan distintas palabras como 
+\say{\textit{Procedure}}, \say{\textit{Transaction}} o \say{\textit{Paperwork}}.
+También en español se puede referir al mismo como \say{Procedimiento
+administrativo}. En todas estas definiciones se tienen como común denominador
+los términos: Proceso, Camino, Papeleo.
+
+Los estados, para ejercer su poder mediante el gobierno, requieren de la
+población cumplir con una serie de obligaciones, las cuales dieron paso al
+surgimiento de diversas instituciones a las que acudimos a efecto de realizar
+trámites.
+
+Al respecto, de acuerdo a una definición del Gobierno de México en uno de sus
+portales web se entiende como trámite a:
 
 \begin{displayquote}
-    cualquier solicitud o entrega de información que las personas físicas o morales del sector privado hacen ante una dependencia u organismo descentralizado, ya sea para cumplir una obligación, obtener un beneficio o servicio o, en general, a fin de que se emita una resolución, así como cualquier documento que dichas personas estén obligadas a conservar.
+ Cualquier solicitud o entrega de información que las
+personas físicas o morales del sector privado hacen ante una dependencia u
+organismo descentralizado, ya sea para cumplir una obligación, obtener un
+beneficio o servicio o, en general, a fin de que se emita una resolución, así
+como cualquier documento que dichas personas estén obligadas a conservar
+\cite{portalmexicotramite}.
 \end{displayquote}
 
-En el mismo portal se hace una clasificación de los trámites, donde se señalan 5 tipos de los mismos:
+En el mismo portal se hace una clasificación de los trámites, donde se señalan 5
+tipos de los mismos:
 
 \begin{enumerate}
     \item De naturaleza obligatoria
@@ -27,7 +127,56 @@ En el mismo portal se hace una clasificación de los trámites, donde se señala
     \item De consulta
 \end{enumerate}
 
-\subsection{Gobierno Electrónico o Digital}
+Según la Real Academia de la Lengua Española, se define como \say{Cada uno de
+los pasos y diligencias que hay que recorrer en un asunto hasta su conclusión}
+\parencite{asaleDiccionarioLenguaEspanola}.
+
+Los trámites constituyen además el conjunto de requisitos, pasos o acciones a
+través de los cuales los individuos o las empresas piden o entregan información
+a una entidad pública, con el fin de obtener un derecho o para cumplir con una
+obligación \cite{rosethFinTramiteEterno2018}. A partir de esto, los distintos
+trámites pueden tener algunas características distintas como poder ser gratuitos
+o de pago o estar dirigido a sujetos específicos de la población (estar
+condicionados).
+
+Sin embargo, el proceso del trámite puede llegar a ser muy engorroso y
+perjudicar a los ciudadanos. Tal es el caso de Domitila Murillo, quien debía
+trasladarse entre varias ciudades de Bolivia para hacer largas filas y vagar
+perdida entre una cantidad indefinida de requisitos. Cuando finalmente logró
+recibir su cédula (el motivo del trámite), no le quedaron más que dos semanas
+antes de fallecer \cite{charoskyquejatramite}
+
+El caso de Domitila no es aislado, las distancias, la falta de definición de
+requerimientos y la burocracia afectan al proceso del trámite. Los tiempos
+suelen ser perjudiciales para la población, muchas veces llegando a tardar horas
+por un simple trámite, como se puede ver en la figura \ref{fig:horastramite}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{assets/horastramite}
+    \caption{Horas necesarias para completar un trámite, por país}{Fuente: Datos del Latinobarómetro, 2017}
+    \label{fig:horastramite}
+\end{figure}
+
+El término burocracia se acuñó en el siglo 18 por el filósofo Francés Vincent de
+Gournay, derivando del francés \textit{bureau} y \textit{cratie} que significan
+\say{Escritorio para escribir} y \say{Gobierno} respectivamente
+\cite{britannicabureaucracy}. Lo cual querría decir \say{Mandar desde el
+escritorio}.
+
+El sociólogo alemán Max Weber define burocracia como una forma racional de
+organización que en su opinión es la forma más pira de sistema legal de
+autoridad. La burocracia es según él, necesaria y algunas de sus características
+fundamentales son las jerarquías, la especialización y la definición estricta
+ded reglas y regulaciones \cite{brajnikdictionaryofpublicadmin}.
+
+Sin embargo, esta forma de organización suele tener como consecuencia en la
+práctica una connotación negativa, ya que implica el consumo de mayores tiempos
+de ejecución para distintas tareas administrativas, como es el caso del trámite.
+Una tendencia reciente cree que el uso de las tecnologías de la información
+podrían ayudar a mitigar este problema.
+
+\subsection{En busca del \textit{e-government}}
 
 En una entrevista a Carlos Jiménez, responsable mundial de \textit{IEEE e-government}, el mismo señala que el gobierno electrónico es una fase para llegar a tener gobiernos inteligentes y abiertos y que consiste en implantar la tecnología para mejorar procesos administrativos y permitir la interacción con los ciudadanos.
 
@@ -76,6 +225,17 @@ Los beneficios se crean para los cuatro actores: Gobierno, Empresas, Ciudadanos 
     \caption{Modelo Relacional de Servicios de la Administración Pública}{Fuente: Naser, El Gobierno Electrónico}
     \label{fig:g2all}
 \end{figure}
+
+\subsection{FLOSS: Herramienta de libertad}
+
+\subsection{Esfuerzos en Bolivia y la región}
+
+\subsection{Sistema SIAI}
+
+\subsection{RAI, IAA, DIA: Un caso común}
+
+\subsection{Componentes de Software Reutilizables}
+
 
 \subsection{Software Libre Reutilizable}
 
