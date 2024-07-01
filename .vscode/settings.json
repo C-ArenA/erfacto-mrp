@@ -210,5 +210,15 @@
     ],
     "latex-workshop.latex.autoClean.run": "onBuilt",
     "editor.fontFamily": "'agave NF', 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace",
-    "editor.wordWrap": "wordWrapColumn"
+    "editor.wordWrap": "wordWrapColumn",
+    "cSpell.words": [
+        "FOSS",
+        "reutilizable",
+        "Reutilizable",
+        "Reutilizables",
+        "SIAI"
+    ],
+    "cSpell.ignoreWords": [
+        "kybernéin"
+    ]
 }
