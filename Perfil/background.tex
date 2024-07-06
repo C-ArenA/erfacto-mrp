@@ -1,26 +1,5 @@
 \section{Antecedentes}
 
-\begin{tcolorbox}[breakable]
-
-    Los antecedentes tienen que dar el origen que nos lleva a considerar el Problema que pretende ser resuelto por este proyecto. Introduce al mismo de forma algo más detallada que la introducción.  Describe el escenario sobre el cual se desarrollará y mencionará qué se intentó para solucionarlo.
-
-    Aquí puedo usar referencias al gobierno electrónico y las determinaciones del estado boliviano y de otras instituciones que apoyan la idea de este proyecto.
-
-    \begin{enumerate}
-        \item Los trámites son importantes para el funcionamiento del estado
-        \item Los gobiernos buscan digitalizarse
-        \item Los gobiernos e instituciones prefieren software libre
-        \item En Bolivia se hizo reglamentos
-        \item Se adjudican obras para desarrollar software
-        \item Se hizo el sistema SIAI con módulos de trámites
-        \item Se hacen muchos desarrollos desde cero
-        \item Existen librerías interesantes
-        \item Existe funcionalidad común
-        \item La reutilización de software es ventajosa
-    \end{enumerate}
-
-\end{tcolorbox}
-
 Durante el desarrollo del sistema SIAI (Sistema de Información Ambiental Industrial) del \say{Ministerio de Desarrollo Productivo y Economía Plural} por parte de la empresa \say{2IES},
 se pudo identificar ciertas funcionalidades comunes a muchos sistemas de software gubernamentales,
 las cuales tienen que ver con los trámites, un proceso común en la administración pública de los gobiernos.
@@ -256,12 +235,56 @@ los decretos supremos 1793, 3251, 3525 y 3527; resoluciones ministeriales como l
 Esto le brinda características particulares al uso de las TICs dentro del ámbito público, 
 las cuales surgen por la naturaleza misma de los gobiernos y sus necesidades específicas como, por ejemplo, la soberanía y la transparencia.
 
+% MARK: Digitram
+\subsection{El trámite digital}
+
+Las áreas más relevantes de puesta en práctica del gobierno electrónico son la administración pública y los servicios públicos. 
+Este último caso se refiere a la entrega de mejores servicios, entre ellos el servicio del trámite interactivo \cite{naserGobiernoElectronicoGestion2011}, o como lo llamaremos en adelante, \say{trámite digital}.
+
+% Defino trámite
+La mala experiencia con los trámites daña la satisfacción ciudadana y la existencia de corrupción en la prestación de servicios reduce la confianza en el gobierno\cite[71]{rosethFinTramiteEterno2018}.
+El canal digital ofrece soluciones a los problemas que existen en el caso de los trámites presenciales: son más rápidos, son más baratos de prestar, y limitan las oportunidades de corrupción \cite[99]{rosethFinTramiteEterno2018}
+
+% Beneficios del canal digital frente al repsencial
+Un trámite digital es uniforme para todos los usuarios, basado en reglas, fácilmente rastreable, e impersonal\cite[105]{rosethFinTramiteEterno2018}. 
+Permite la traducción de normativa en código de computadora, el cual no tiene preferencias de ningún tipo hacia ninguna persona y funciona de forma determinista.
+
+El costo operativo de prestación de un trámite digital oscila entre el 2,35\percentsign~y el 5\percentsign~de lo que cuesta prestar un trámite por el canal presencial \cite[11]{parejaGestionIdentidadSu}. Además, disminuye la cantidad de errores de los funcionarios encargados. Ambas problemáticas importantes según directivos de distintas instituciones públicas, como puede verse en la figura \ref{fig:tramdig_importa}.
+
+\begin{figure}[!hbpt]
+	\centering
+	\includegraphics[width=0.7\textwidth]{assets/tramdig_importa}
+	\caption{Simplificar trámites es importante porque...}{Fuente: Encuesta BID-GEALC, 2017}
+	\label{fig:tramdig_importa}
+\end{figure}
+
+% Bolivia prefiere trámites digitales
+Dadas las ventajas que nos ofrecen los trámites digitales, el gobierno de Bolivia, por ejemplo, como parte de su adopción de políticas favorables al gobierno electrónico, 
+establece en el parágrafo I del Artículo Nº 12 del Decreto Supremo Nº 3525\cite{DECRETOSUPREMO35252018} que: 
+\textquote{Las instituciones públicas deberán priorizar en todos sus trámites el uso de tecnologías de información y comunicación a efecto de digitalizar, automatizar, interoperar y simplificar la tramitación de los asuntos que son de su competencia.}
+
+Los sistemas de software gubernamentales con sistemas de gestión y seguimiento de trámites son, por lo tanto, muy comunes en varios desarrollos. 
+En algunos casos son sistemas grandes y en todos los casos se requiere que sean confiables.
+
+\subsection{Reutilización del software}
+
+% Reutilización de software, importancia
+En la conferencia sobre ingeniería de software de la OTAN, el año 1968, se hablaba sobre la \say{crisis del software}, 
+el problema de construir sistemas de software de gran tamaño, que sean confiables y de costo racional.
+En la misma conferencia se vio a la reutilización del software como una posible solución, pero que tenía dificultades para ser aplicada\cite{kruegerSoftwareReuse1992}.
+
+Existen muchas ventajas en la reutilización del software, 
+como por ejemplo mejoras en productividad al evitar desarrollar la misma funcionalidad o también 
+mejoras en calidad al incorporar componentes cuya confiabilidad ha sido ya establecida\cite{selbyEnablingReusebasedSoftware2005}. 
+En combinación con la utilización del software libre, se añade una ventaja económica posible e incluso mayor confiabilidad debido a la mayor cantidad de colaboradores posibles.
+
 % MARK: FOSS
 \subsection{FOSS: Herramientas de libertad}
 
 Cuando Richard Stallman comenzó a trabajar como programador en el Laboratorio de Inteligencia Artificial del MIT el año 1971, 
-pasó a formar parte, por primera vez, de una comunidad de \say{\textit{hackers}
-\footnote{El término \textit{hacker} es entendido por Stallman como aquel que hace referencia a una persona inteligente y curiosa con espíritu de sagacidad imaginativa y de exploración}}
+pasó a formar parte, por primera vez, de una comunidad de 
+\say{\textit{hackers}}
+\footnote{El término \textit{hacker} es entendido por Stallman como aquel que hace referencia a una persona inteligente y curiosa con espíritu de sagacidad imaginativa y de exploración}
 que \textbf{compartían software} y, sin saberlo porque en aquel entonces la práctica era tan común que no tenía un término propio, eran también una comunidad de \textquote{software libre} \cite{stallmanSoftwareLibrePara}.
 
 % Qué es el software libre de forma resumida
@@ -271,52 +294,11 @@ Por la ambigüedad del término en inglés
 nació otra forma de referirse a lo mismo, salvo diferencias filosóficas según Stallman\cite{WhyOpenSource}, y que se popularizó bastante: \textbf{\textit{Open Source}}. 
 En este documento nos referimos a ellos casi indistintamente y teniendo preferencia por el uso del acrónimo \textbf{FOSS}, \textit{Free and Open Source Software}, que aglutina a ambos.
 
-% Reutilización de software, importancia
-En la conferencia sobre ingeniería de software de la OTAN, el año 1968, se hablaba sobre la \say{crisis del software}, 
-el problema de construir sistemas de software de gran tamaño, que sean confiables y de costo racional.
-En la misma conferencia se vio a la reutilización del software como una posible solución, pero que tenía dificultades para ser aplicada\cite{kruegerSoftwareReuse1992}.
-Las distintas libertades descritas del FOSS y la utilización del internet han logrado en los últimos años superar estas dificultades.
-
-Existen muchas ventajas en la reutilización del software, 
-como por ejemplo mejoras en productividad al evitar desarrollar la misma funcionalidad o también 
-mejoras en calidad al incorporar componentes cuya confiabilidad ha sido ya establecida\cite{selbyEnablingReusebasedSoftware2005}. 
-En combinación con la utilización del software libre, se añade una ventaja económica posible e incluso mayor confiabilidad debido a la mayor cantidad de colaboradores posibles.
-
-
-
-% FOSS es reutilizable y hay paquetes de software
-
 % Por qué se prefiere FOSS
 % Los gobiernos prefieren FOSS
+El software libre tiene un efecto democratizador en los gobiernos \cite{donorfioPoliticsFreeOpen2004}, además de brindar soberanía sobre el código utilizado por los mismos permitiéndoles tener el control de la tecnología empleada \cite{LibertadSoftwareSu}. De acuerdo a Stallman, es necesario usar software libre en el gobierno electrónico para no tener la necesidad de pedir permiso a un tercero para manipular el código fuente y para que gobiernos de todo el mundo puedan utilizar, corregir, difundir y contribuir a la mejora del software\cite{SoftwareLibreGobierno}.
+
 % En Bolivia hay reglamentos para el FOSS
-la creación del \textit{Software FOSS} se atribuye a Richard Stallman, conocido
-como el padre del código abierto. El mismo creía que todos merecían colaborar
-libre y abiertamente con otros utilizando software, por lo que en 1983 presentó
-el Proyecto GNU, el cual constituye el primer sistema operativo libre.
-Posteriormente en 1985 siguió con la creación de la Free Software Foundation
-para apoyar aún más a la comunidad del software libre. A finales de la década de
-1990 el reconocimiento generalizado de Linux y el lanzamiento del código fuente
-del navegador \textit{Netscape} aumentó el interés y la participación en el
-Software libre. La etiqueta de \textit{Open Source} se creó en una sesión
-estratégica celebrada el 3 de febrero de 1998 en Palo Alto, California, poco
-después de que se publicara el código fuente de \textit{Netscape}. Sin embargo,
-el término que actualmente se considera más correcto de usar es el de
-\textit{FOSS}, ya que acuña ambas definiciones \textit{(Free and Open Source
-    Software)}.
-
-El software libre es principalmente colaborativo y reutilizable, afectando
-positivamente a la economía. En un principio, las grandes corporaciones se
-negaban a apoyar el desarrollo de \textit{FOSS}. Sin embargo, vista la utilidad
-del mismo, hoy en día se prefiere su utilización.
-
-El software que se reutiliza es software de mayor calidad y a menores costos
-económicos y temporales. Implica una gran ventaja sobre los desarrollos desde
-cero.
-
-% MARK: Digitram
-\subsection{El trámite digital}
-los trámites por el canal presencial son entre 20 y 42 veces más costosos de prestar que por el canal digital\cite[70]{rosethFinTramiteEterno2018}.
-La mala experiencia con los trámites daña la satisfacción ciudadana y la existencia de corrupción en la prestación de servicios reduce la confianza en el gobierno\cite[71]{rosethFinTramiteEterno2018}
-Mostrar gráfico 1.35
-para aquellos trámites que son indispensables, el canal digital ofrece soluciones a los problemas que existen en el caso de los trámites presenciales: son más rápidos, son más baratos de prestar, y limitan las oportunidades de corrupción \cite[99]{rosethFinTramiteEterno2018}
-
+El gobierno de Bolivia ha sentado las bases necesarias para encaminar al gobierno hacia el uso del software libre. 
+En el Artículo 77 de la Ley de Telecomunicaciones, Tecnologías de la Información y Comunicación, por ejemplo, indica que todos los órganos del estado deben promover y priorizar el uso del software libre\cite{Ley164Ley2011}.
+Para esto se elaboró el Plan de Implementación de Software Libre y Estándares Abiertos, en el cual se marca una política orientada a reducir los lazos de dependencia tecnológica y avanzar en el proceso de descolonización del conocimiento\cite{PLANIMPLEMENTACIONSOFTWARE}.
