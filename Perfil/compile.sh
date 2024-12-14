@@ -13,3 +13,5 @@ echo "pdflatex..."
 pdflatex --output-directory=build main.tex > ./build/pdflatex.log
 
 # latexindent -l -w -c=./latexindent sections/*
+# latexindent -l -w -c=./latexindent main.tex
+# latexindent -l -w -c=./latexindent cover.tex

@@ -12,8 +12,8 @@ claras y descripciones escuetas.
 Cuando uno piensa en trámites, usualmente piensa en burocracia, en largas filas,
 una obligación muchas veces irrenunciable y una lista interminable de pasos a
 seguir. Según la Real Academia de la Lengua Española, se define como \say{Cada
-	uno de los pasos y diligencias que hay que recorrer en un asunto hasta su
-	conclusión} \parencite{asaleDiccionarioLenguaEspanola}.
+    uno de los pasos y diligencias que hay que recorrer en un asunto hasta su
+    conclusión} \parencite{asaleDiccionarioLenguaEspanola}.
 
 Si bien las definiciones de trámite son escasas y algunas pueden tratar su
 semántica desde una perspectiva más funcional, es indudable que un trámite es un
@@ -30,11 +30,11 @@ efectos prácticos se aproximan más a máquinas de estado finitas
 \ref{fig:nachocarreraparalela}.
 
 \begin{figure}
-	\centering
-	\includegraphics[width=0.7\textwidth]{assets/carreraparalelanacho}
-	\caption{Diagrama de una máquina de Turing para carreras paralelas
-		desarrollada en \cite{nachoSISTEMACONTROLTRAMITES2007}}
-	\label{fig:nachocarreraparalela}
+    \centering
+    \includegraphics[width=0.7\textwidth]{assets/carreraparalelanacho}
+    \caption{Diagrama de una máquina de Turing para carreras paralelas
+        desarrollada en \cite{nachoSISTEMACONTROLTRAMITES2007}}
+    \label{fig:nachocarreraparalela}
 \end{figure}
 
 Desde luego, las máquinas de estados finitas parecen ser una manera sencilla de
@@ -44,25 +44,25 @@ procedimiento administrativo, como se puede evidenciar en la definición
 matemática de este autómata:
 
 \begin{definition}[Máquina de Estados Finita]
-	Una máquina de estados es un conjunto de 5 elementos $M=(S,I,O,v,w)$, donde
-	$S$ representa a la colección de estados de $M$; $I$ representa al alfabeto
-	de entradas para M; O es el alfabeto de salidas de M; $v:SxI->S$ es la
-	función del siguiente estado; y $w:SxI->O$ es la función de salida
-	\parencite{grimaldiDiscreteCombinatorialMathematics1998}.
+    Una máquina de estados es un conjunto de 5 elementos $M=(S,I,O,v,w)$, donde
+    $S$ representa a la colección de estados de $M$; $I$ representa al alfabeto
+    de entradas para M; O es el alfabeto de salidas de M; $v:SxI->S$ es la
+    función del siguiente estado; y $w:SxI->O$ es la función de salida
+    \parencite{grimaldiDiscreteCombinatorialMathematics1998}.
 \end{definition}
 
 Este paralelismo es más notorio en un diagrama de estados como el que se muestra
 en la figura \ref{fig:states}, donde tenemos los estados de $S = (s_{0}, s_{1},
-	s_{2}, s_{3}, s_{4}, s_{5}, s_{error})$ y algunas transiciones entre los mismos,
+    s_{2}, s_{3}, s_{4}, s_{5}, s_{error})$ y algunas transiciones entre los mismos,
 cada una con sus correspondientes entradas ($\iota_{mn}$) y salidas ($o_{mn}$).
 Las transiciones restantes se omiten porque apuntan a un mismo estado de error
 del trámite ($s_{error}$).
 
 \begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.8\textwidth]{assets/statediagramexample}
-	\caption{Diagrama de estados finitos con salidas}
-	\label{fig:states}
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/statediagramexample}
+    \caption{Diagrama de estados finitos con salidas}
+    \label{fig:states}
 \end{figure}
 
 En la figura \ref{fig:states_procedure} podemos ver el mismo diagrama, pero
@@ -73,10 +73,10 @@ para fines prácticos de ilustración. En un sistema real se esperan definicione
 claras que reflejen la totalidad del trámite implementado.
 
 \begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.8\textwidth]{assets/stateprocedureexample}
-	\caption{Diagrama de estados simplificado para un trámite}
-	\label{fig:states_procedure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/stateprocedureexample}
+    \caption{Diagrama de estados simplificado para un trámite}
+    \label{fig:states_procedure}
 \end{figure}
 
 Se plantea utilizar este enfoque del uso de autómatas, como también son llamadas
@@ -85,25 +85,25 @@ lineamientos conceptuales que guíen al usuario de esta solución, que
 inicialmente serían:
 
 \begin{itemize}
-	\item Descripción detallada de los estados, compuesta mínimamente por un
-	      nombre único, una descripción, el sujeto cuya perspectiva se usa para la
-	      descripción y su visibilidad.
+    \item Descripción detallada de los estados, compuesta mínimamente por un
+          nombre único, una descripción, el sujeto cuya perspectiva se usa para la
+          descripción y su visibilidad.
 
-	\item Preferencia del autómata de Moore sobre el autómata de Mealy. Los
-	      autómatas de Mealy son una simplificación en número de estados a partir
-	      de los autómatas de Moore, con estados que en las aplicaciones
-	      originales del concepto podían ser considerados innecesarios
-	      \parencite{mealyMethodSynthesizingSequential1955}.  Si bien en muchas
-	      aplicaciones es lo deseado, en temas de auditoría se prefiere tener la
-	      mayor cantidad de información relevante, por lo que sin restringir el
-	      uso de máquinas de Mealy, se priorizará el uso de máquinas de Moore.
+    \item Preferencia del autómata de Moore sobre el autómata de Mealy. Los
+          autómatas de Mealy son una simplificación en número de estados a partir
+          de los autómatas de Moore, con estados que en las aplicaciones
+          originales del concepto podían ser considerados innecesarios
+          \parencite{mealyMethodSynthesizingSequential1955}.  Si bien en muchas
+          aplicaciones es lo deseado, en temas de auditoría se prefiere tener la
+          mayor cantidad de información relevante, por lo que sin restringir el
+          uso de máquinas de Mealy, se priorizará el uso de máquinas de Moore.
 
-	\item Respecto al anterior punto, incluso si el usuario usa Mealy en lugar
-	      de Moore, se recomienda la definición de tantos estados como sean
-	      posibles.
+    \item Respecto al anterior punto, incluso si el usuario usa Mealy en lugar
+          de Moore, se recomienda la definición de tantos estados como sean
+          posibles.
 
-	      % TODO: Aquí irían las definiciones de inputs, outputs, etc como lo tengo
-	      % descrito en el Obsidian
+          % TODO: Aquí irían las definiciones de inputs, outputs, etc como lo tengo
+          % descrito en el Obsidian
 \end{itemize}
 
 Como parte de la solución propuesta, se debe entender que los lineamientos
@@ -149,25 +149,25 @@ marcos de trabajo descritos anteriormente, sino que además se piensa brinde
 herramientas que ayuden al proceso de trámites, como por ejemplo:
 
 \begin{itemize}
-	\item Generación de códigos de trámite.
+    \item Generación de códigos de trámite.
 
-	\item Generación de códigos de verificación de correos (Que si bien hay
-	      alternativas para lo mismo, se facilitará el uso desde el paquete).
+    \item Generación de códigos de verificación de correos (Que si bien hay
+          alternativas para lo mismo, se facilitará el uso desde el paquete).
 
-	\item Funcionalidad de notificaciones.
+    \item Funcionalidad de notificaciones.
 
-	\item Límites de tiempo asignables a los estados de trámite.
+    \item Límites de tiempo asignables a los estados de trámite.
 
-	\item Funcionalidad de persistencia de historial de estados incorporada.
+    \item Funcionalidad de persistencia de historial de estados incorporada.
 
-	\item Funciones de recuperación de historia de trámite para seguimiento.
+    \item Funciones de recuperación de historia de trámite para seguimiento.
 
-	\item Niveles de visibilidad de trámites para seguimiento.
+    \item Niveles de visibilidad de trámites para seguimiento.
 
-	\item Mecanismos para dificultar el entorpecimiento de un trámite y
-	      facilitar la identificación de responsables.
+    \item Mecanismos para dificultar el entorpecimiento de un trámite y
+          facilitar la identificación de responsables.
 
-	\item Interfaz sencilla para cambio de estados de una máquina (trámite).
+    \item Interfaz sencilla para cambio de estados de una máquina (trámite).
 \end{itemize}
 
 Para concluir esta aproximación a la solución a realizar, quedan dos puntos
@@ -178,25 +178,25 @@ Para que un proyecto de software sea considerado de software libre debe cumplir
 con 4 libertades esenciales \cite{QueEsSoftware}:
 
 \begin{itemize}
-	\item La libertad de ejecutar el programa como se desee, con cualquier
-	      propósito (libertad 0).
+    \item La libertad de ejecutar el programa como se desee, con cualquier
+          propósito (libertad 0).
 
-	\item La libertad de estudiar cómo funciona el programa, y cambiarlo para
-	      que haga lo que se desee (libertad 1). El acceso al código fuente es una
-	      condición necesaria para ello.
+    \item La libertad de estudiar cómo funciona el programa, y cambiarlo para
+          que haga lo que se desee (libertad 1). El acceso al código fuente es una
+          condición necesaria para ello.
 
-	\item La libertad de redistribuir copias para ayudar a otros (libertad 2).
+    \item La libertad de redistribuir copias para ayudar a otros (libertad 2).
 
-	\item La libertad de distribuir copias de sus versiones modificadas a
-	      terceros (libertad 3). Esto le permite ofrecer a toda la comunidad la
-	      oportunidad de beneficiarse de las modificaciones. El acceso al código
-	      fuente es una condición necesaria para ello.
+    \item La libertad de distribuir copias de sus versiones modificadas a
+          terceros (libertad 3). Esto le permite ofrecer a toda la comunidad la
+          oportunidad de beneficiarse de las modificaciones. El acceso al código
+          fuente es una condición necesaria para ello.
 \end{itemize}
 
 Esto debe ser claramente definido en un documento de licencia de Software que se
 encuentre junto al código fuente. Existen varias licencias que cumplen con los
 lineamientos antes señalados y son aprobados por la \textit{FSF (Free Software
-Foundation)} \cite{VariousLicensesComments}.
+    Foundation)} \cite{VariousLicensesComments}.
 
 Si bien la licencia predilecta del Software Libre es la GNU-GPL, de la cual
 existe incluso una versión boliviana llamada LPG-Bolivia
