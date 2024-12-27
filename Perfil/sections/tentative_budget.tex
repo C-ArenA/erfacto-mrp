@@ -1,1 +1,82 @@
 \section{Presupuesto Tentativo}
+
+Dadas las características del sistema propuesto en la sección \ref{section:proposed_solution} y la metodología propuesta en la sección \ref{section:methodology} se requiere el uso de infraestructura que se adecúe a las necesidades de uso, también se debe tomar en cuenta la intervención profesional en cada etapa del desarrollo, sujeta a los distintos requerimientos.
+
+\subsection{Costos de desarrollo}
+
+Los siguientes costos son aproximados basados en algunas ofertas que se encuentran en el mercado local según fuentes de internet como Glassdoor (de existir) o en base a estadísticas a nivel regional. Si bien el desarrollo será realizado por una sola persona, se realiza una clasificación en base a estándares modernos, las necesidades del sistema a desarrollar, la metodología empleada y principalmente las distintas etapas del proceso del software.
+
+\begin{itemize}
+  \item Análisis, Requerimientos y Modelado del negocio
+        \begin{itemize}
+          \item Software Architect: 7158 Bs/mes
+          \item Database Administrator 6500 Bs/mes
+          \item UX/UI Designer: 6000 Bs/mes
+        \end{itemize}
+  \item Implementación y Pruebas
+        \begin{itemize}
+          \item Frontend Developer: 5000Bs/mes
+          \item Backend Developer: 6000Bs/mes
+          \item Quality Assurance: 5000Bs/mes
+        \end{itemize}
+  \item Despliegue
+        \begin{itemize}
+          \item Development Operations Engineer: 4750Bs/mes
+        \end{itemize}
+  \item Gestión del Proyecto
+        \begin{itemize}
+          \item Project Manager: 9500Bs/mes
+        \end{itemize}
+\end{itemize}
+
+Nótese que en proyectos de mayor magnitud muchos de estos roles pueden llegar a subdividirse. También, en ciertos casos, los roles pueden tener distintas responsabilidades, por lo que se pide al lector tomar esta sección del presupuesto sin demasiado rigor.
+
+Sin embargo, tomando en cuenta que los roles pueden fusionarse entre sí y que el salario promedio de un ingeniero en sistemas en Bolivia es de 6000Bs tenemos el siguiente presupuesto:
+
+\begin{itemize}
+  \item Fullstack developer: 6000Bs/mes
+  \item DevOps + Q\&A: 6000Bs/mes
+  \item Software Engineer and Architect: 6000Bs/mes
+  \item UI/UX Designer: 3000Bs/mes
+\end{itemize}
+
+Generando, para un desarrollo de 4 meses el costo aproximado de 
+
+\begin{itemize}
+  \item Fullstack developer: 24000Bs
+  \item DevOps + Q\&A: 12000Bs
+  \item Software Engineer and Architect: 24000Bs
+  \item UI/UX Designer: 3000Bs
+\end{itemize}
+
+Que en total son 63000Bs
+
+\subsection{Costos de mantenimiento}
+
+El mantenimiento del software tiene que ver con correcciones menores y verificación de funcionamiento del software, que por el periodo de dos años sería: 2400Bs
+
+\subsection{Costos de infraestructura}
+
+Al ser un proyecto destinado al uso por pocos usuarios y específico para una empresa de prefabricados, pero considerando que será utilizable mediante internet, evidentemente se requiere de un servidor de hosting, un dominio y un servidor DNS y protección ante ataques DDoS. 
+
+Los siguientes costos son aproximados en base a proveedores como Hostinger, Cloudflare, Hetzner y AWS, que son opciones populares en el mercado actualmente y se consideran para el periodo de 2 años de funcionamiento.
+
+\begin{itemize}
+  \item VPS Hostinger KVM 2: 168 \$us
+  \item Dominio web Hostinger: 20,88 \$us
+  \item DNS y protección DDoS de Cloudflare: 0 \$us
+  \item Almacenamiento S3 para backups mensuales de la base de datos de 150MB en AWS: 0.2 \$us
+\end{itemize}
+
+Por lo tanto, la infraestructura para un periodo de 2 años tendrá un costo de aproximadamente: 168,2 \$us que en Bs serían (A tipo de cambio oficial): 1170,70 Bs.
+
+\subsection{Resumen de costos}
+
+De este modo el presupuesto tentativo, si el desarrollo fuera hecho por un equipo mínimo y considerando funcionamiento de 2 años sería de: 66570,70 Bs.
+
+
+Sin embargo, en proyectos de menor magnitud, como en este caso, suele haber un solo desarrollador usando herramientas modernas útiles que, considerando que en este caso es el autor de este proyecto, con una pretensión salarial de 4200Bs, veríamos que el costo para los primeros dos años es de: 20370,70 Bs.
+
+Los pares de años posteriores tendrían un costo con mantenimiento constante aproximado de: 3570,70 Bs.
+
+En 10 años el costo sería de 34653,5. Siendo que en las alternativas el costo sería de 70000Bs por año con 5 usuarios.
